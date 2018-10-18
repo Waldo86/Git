@@ -20,10 +20,10 @@ Java:
     * Java: Adding a new W3C-compatible string error code
     * Add support to listen "refresh" events. Fixes #1584
     * extended ExpectedConditions with a list of new ones. New logic operators + conditions for css and html attributes
-    * Java: Deleting webbit a test server
+    * Java: Deleting webbit a main server
 Grid:
     * cleanup cycle needs to be persisted to allMap, since that's where it's read from in other places. this stuff needs some cleanup...
-    * adding grid e2e distribution test
+    * adding grid e2e distribution main
     * fix mixed content issue
     * when sorting nodes for consideration, also take into account last time accessed for a more even distribution across nodes over the lifetime of the grid.
     * Also fix using the RemoteProxy's getResourceUsageInPercent instead of calculating it in the sort.  Fixes #1673
@@ -104,7 +104,7 @@ Grid:
 
 WebDriver:
     * Allow GeckoDriverService to be extended.
-    * Update tagName test searching for "" to throw
+    * Update tagName main searching for "" to throw
 
 v2.49.0
 =======
@@ -114,16 +114,16 @@ WebDriver:
     * Remove guava dep on the selenium-apis when built using Buck.
     * on osx for firefox, fallback to checking homebrew install, if the default isn't there
     * Pass Options.ime() through to the wrapped driver.
-    * Fixing HTML suite test runner
+    * Fixing HTML suite main runner
     * Bump guava to version 19
     * Ensure that the buck-built core library has no third party dependencies.
-    * Updating textContent attribute test for IE9
+    * Updating textContent attribute main for IE9
     * Adding appropriate wait to AuthenticatedPageLoadingTest
     * Refactor concrete WebDriverException#getSupportUrl's
     * Fix a NullPointerException in RemoteWebDriver.getCurrentUrl
     * Reduces time wasted in when using a native driver
     * add the useful information about the session / capabilities in the exception when the 'browser may have died'
-    * give the cleaner almost double the time to clean up the sessions (a whopping 9 more ms). Hopefull will deflake this test in CI.
+    * give the cleaner almost double the time to clean up the sessions (a whopping 9 more ms). Hopefull will deflake this main in CI.
     * Adding El Capitan (OS X 10.11) to Platform
     * Updating IE driver to fix clearing of <input type='number'> fields
     * Treat a null response to getCookies as [].
@@ -140,7 +140,7 @@ WebDriver:
     * Safari should only specify MAC as platform in default desired capabilities
     * improve javadoc for FluentWait
     * Changing interface name to be more Java-ish
-    * Update GeneratedJsTestServlet to work with test files that use Closure's module syntax.
+    * Update GeneratedJsTestServlet to work with main files that use Closure's module syntax.
     * Adding release-v3 crazyfun target
     * should be able to send keys to a content editable div that is initially empty
     * Implementing pure WebDriver grid server (v.3)
@@ -161,7 +161,7 @@ WebDriver:
     * Stop exposing embedded jetty out of SeleniumServer
     * Breaking unwanted grid dependency on parts of RC server
     * Deleting JsonKey, it's a useless abstraction
-    * Breaking unwanted grid test dependency on RC server (the removed attribute is not used actually)
+    * Breaking unwanted grid main dependency on RC server (the removed attribute is not used actually)
     * Fixes #1140, #1334, #1263, #669, #1165, #1132, #1186, #1203, #1214, #1242
             #1241, #1240, #1238, #1237
 
@@ -185,7 +185,7 @@ WebDriver:
     * adding pom files for jetty 9 repakced jars and the empty-javadoc jar used to upload to maven central
     * Restoring use of queued thread pool in the hub
     * Deleting commented code
-    * Fixing UploadServlet in test environment to conform to servlet-api 3.1
+    * Fixing UploadServlet in main environment to conform to servlet-api 3.1
     * Update jetty readme
     * Bump the Jetty version from 7 to 9
     * Updating screenshot code to retain scroll bars in required directions.
@@ -207,16 +207,16 @@ WebDriver:
     * Deleting a couple of redundant casts
     * No need to cast, the variable has required type already
     * Deleting redundant logging to console in tests
-    * HtmlUnit: Ignoring one more test
-    * Disabling a test if JS is not enabled
-    * HtmlUnit: Unignoring a magically working test
+    * HtmlUnit: Ignoring one more main
+    * Disabling a main if JS is not enabled
+    * HtmlUnit: Unignoring a magically working main
     * HtmlUnit: restoring backward compatibility after changes in getCurrentUrl semantics
     * WDBC: restoring backward compatibility after changes in getCurrentUrl semantics
     * Deleting native events from firefox driver
     * Deleting outdated assumes for unsupported Firefox version
     * Resorting tests for moveByOffset action
     * Firefox: don't dispatch keypress event if defaultPrevent() of the keydown event is called because KEY_FLAG_PREVENT_DEFAULT has no effect
-    * Moving IE specific test to IE test suite
+    * Moving IE specific main to IE main suite
     * Firefox: throwing proper exception on an attempt to find an element in the deleted frame
     * Firefox: changing getCurrentUrl to return top level browsing context address (to conform to the standard)
     * Firefox: fixing page source for plain text pages
@@ -224,16 +224,16 @@ WebDriver:
     * fix the client and server classpath
     * Move the servlet-api package for easier automated updates.
     * Renaming the Jetty7AppServer to remove the version number.
-    * Fix up failing htmlunitdriver test.
+    * Fix up failing htmlunitdriver main.
     * Simulating window.getPosition and setPosition operations
     * Simulating switchTo().window by name
-    * Fixing test to switch back to the original window after opening a new one.
+    * Fixing main to switch back to the original window after opening a new one.
     * Implementing standard-compliant window operations
     * Implementing standard-compliant getSize, getPosition and getPositionInView
     * Deleting marionette tcp connector
     * remove unused css transform code from location in view
     * use BasicHttpRequest instead of EnclosingRequest
-    * htmlunit passes the httponly cookie test
+    * htmlunit passes the httponly cookie main
     * fix maven dependency of htmlunit driver on the support package
     * don't replace a platform specified to the add browser method, like the TODO says
     * Simulating submit operation for standard compliant drivers
@@ -362,7 +362,7 @@ Important changes in this release:
 Other notable changes:
 
 * Added ability to clear file input fields for Firefox.
-* Fix bug in Safari where Selenium updated the page under test in some
+* Fix bug in Safari where Selenium updated the page under main in some
   circumstances.
 * HtmlUnit: do not disable mouse notifications when js is disabled,
   css is also related to this information (only partly implemented in
@@ -442,7 +442,7 @@ Other changes:
   implementations
 * Taking XML namespaces into account when searching by XPath. Checked
   to work in Firefox. Chrome supports namespaces out of the box. Need
-  to update IE and Safari drivers to use the updated atom and test
+  to update IE and Safari drivers to use the updated atom and main
   them carefully.
 
 v2.44.0
@@ -453,7 +453,7 @@ v2.44.0
   * Remove the deprecated DatabaseStorage interface. And callers. Note that the browser implementations may still have an implementation of these interfaces, but nothing in the main project implements it so we should be okay.
   * Bump the version of guava to 18
   * Bringing MarionetteConnection in line with the current marionette state (FF33)
-  * Add new tests for some wait conditions Also add the ExpectedConditionsTest to the test suite.
+  * Add new tests for some wait conditions Also add the ExpectedConditionsTest to the main suite.
   * Update FindBy annotations description
   * Moving last part of browserlaunchers package from client to server
   * Moving Proxies utility class to server
@@ -487,7 +487,7 @@ v2.44.0
   * Fixing WDBS compatibility with IE5. Fixes issue 7938
   * HtmlUnitDriver: Initial code cleanup.
   * Eclipse classpath fixes for htmlunit.
-  * Deflake a test.
+  * Deflake a main.
 
 v2.43.1
 =======
@@ -515,7 +515,7 @@ WebDriver:
     in this process, the original "Selenium" interface is being marked as
     deprecated.
   * Run FirefoxDriver tests with Buck.
-  * Bump timeout for tests since a suite is also a test.
+  * Bump timeout for tests since a suite is also a main.
   * Run htmlunit-driver tests with Buck.
   * Run the ignored tests printer with Buck.
   * Get org.openqa.selenium.SmallTests building with Buck.
@@ -524,11 +524,11 @@ WebDriver:
     The bug/limitation where browser supports subpixel precision for elements but not for dispatched events was found in both modern Chrome (http://crbug.com/396380) and Firefox (?) browsers.
     (IE doesn't seem to be affected: before and including IE9 - no subpixel for elements and events; from ie10 - subpixel is supported for both elements and events).
 
-    This test was lucky so far (mostly?) and didn't hit this issue, until Chrome 37 that enabled subpixel text scaling by default.
+    This main was lucky so far (mostly?) and didn't hit this issue, until Chrome 37 that enabled subpixel text scaling by default.
 
-    This change makes *sure* elements have subpixel coordinates (if only browser supports'em) and then it makes sure this test doesn't fail because of that (while still testing selenium atoms).
+    This change makes *sure* elements have subpixel coordinates (if only browser supports'em) and then it makes sure this main doesn't fail because of that (while still testing selenium atoms).
 
-    While there, I moved asserts from event handlers into the normal test flow so jsunit can properly attribute assertion failures to specific test methods.
+    While there, I moved asserts from event handlers into the normal main flow so jsunit can properly attribute assertion failures to specific main methods.
   * Updating prebuilt libs for windows
   * Re-add the rubyzip jar
   * updating prebuilts for linux
@@ -641,9 +641,9 @@ WebDriver:
   * Fixing clicks on invisible elements in HtmlUnitDriver broken by ElementNotVisibleException being a subclass of InvalidElementStateException
   * Click after move with offset should use last mouse position
   * Adding new interface methods to the stubs
-  * Preserve wrapped test function's string representation for Mocah's BDD interface.
+  * Preserve wrapped main function's string representation for Mocah's BDD interface.
   * Fixing IE driver to allow JavaScript objects with property names with spaces
-  * Ignoring IE6-only test failure for CSS
+  * Ignoring IE6-only main failure for CSS
   * Bump the hmltunit version to 2.14
   * Remove a class of our which replicates HTTP status codes already given meaningful names in the standard JRE.
   * Updating version match for native libs in firefox plugin manifest file
@@ -675,11 +675,11 @@ WebDriver:
   * Eclipse compiler update for Java 8 support
   * Updating naive user agent string checks to account for IE11
   * Adding Windows 8.1 detection to Platform.extractFromSysProperty
-  * retry a test failure if there was a 'sauce' issue, like we exceeded the total time a test session is allowed to take.
+  * retry a main failure if there was a 'sauce' issue, like we exceeded the total time a main session is allowed to take.
   * adding Windows 8.1 platform, so we can use it in saucelabs for IE11 testing
   * Remove deprecated functions on webdriver.promise.Promise class * Use templates with webdriver.promise.Promise to improve types   documentation.
   * Loosen input type to webdriver.stacktrace.getStack_ to account for an rare condition in FF 28+ where the Error() constructor returns undefined (not sure what causes it, just know it happens)
-  * Add ability to save an abitrary base64 string as a screenshot from a WebDriverJS test running in a browser.
+  * Add ability to save an abitrary base64 string as a screenshot from a WebDriverJS main running in a browser.
   * When Firefox is configured to accept all SSL certs (which is the default behavior), we need to set a time offset to prevent Firefox from using HSTS (HTTP Strict Transport Security). If we don't do this, Firefox will pre-fetch the certs for sites that should always be accessed over HTTPS and allows Firefox to catch man-in-the-middle attacks. While this is A Good Thing for users, it prevents WebDriver from accepting self-signed certs for these domains (e.g. when they are accessed through a HTTPS proxy).
   * Remove unnecessary dependency on bouncycastle.
   * Making ChromeDriver directly implement the interfaces representing features it implements.
@@ -689,7 +689,7 @@ WebDriver:
   * Packaging webdriven selenium (emulator) to client-combined jar. Fixes issue 7206
   * Don't use system path separators when computing URL paths.
   * Make Cookie serializable
-  * Ignoring a test for HtmlUnitDriver that can't be run due to HtmlUnit restrictions
+  * Ignoring a main for HtmlUnitDriver that can't be run due to HtmlUnit restrictions
   * Allowing FindBy, FindBys, FindAll annotations on types
   * Minor cleanup FirefoxBinary.java
   * Adding Firefox native event version support to CHANGELOG
@@ -958,17 +958,17 @@ Grid:
   * FIXED: 6392: Removed misleading log messages.
 
 RC:
-  * FIXED: 1666: Fixed typo in RegExp.test function name.
+  * FIXED: 1666: Fixed typo in RegExp.main function name.
   * FIXED: 1758: Ignoring closed windows when collecting attributes
     from all windows (RC).
   * FIXED: 2508: Fixed screenshot size calculation for quirks mode (RC)
-  * FIXED: 2845: Moved storedVars from test case level to test suite
+  * FIXED: 2845: Moved storedVars from main case level to main suite
     level.
   * FIXED: 3185: Fixed JSON converter (RC).
   * FIXED: 3270: Fixed switch to window by var= locator (RC).
   * FIXED: 5103: Fixed screenshooter in Firefox and Selenium RC,
     limiting the size of the screenshot to pevent failures.
-  * FIXED: 6496: Enabled .htm and .xhtml extensions for test suites.
+  * FIXED: 6496: Enabled .htm and .xhtml extensions for main suites.
 
 v2.37.0
 =======
@@ -1091,7 +1091,7 @@ WebDriver:
 WebDriver JS:
   * When capturing console output, guard against user scripts that
     redefine the console global.
-  * Improved logging in the test client.
+  * Improved logging in the main client.
   * Use goog.labs.testing.assertThat for the assertThat library.
   * Improved stack trace handling
   * Defined a webdriver.Capabilities class for webdriverjs.
@@ -1265,7 +1265,7 @@ WebDriver:
   * Deprecated XPathLookupException in favour of
     InvalidSelectorException
   * FIXED: 3602: Changing IE view port calculations to allow for
-    always-present vertical scroll bar, and to test for horizontal
+    always-present vertical scroll bar, and to main for horizontal
     scroll bar and adjust as required by page content.
   * FIXED: 4576: self registering proxy now check for user specified
     proxy id.
@@ -1321,7 +1321,7 @@ WebDriver:
   * Modifying scroll behavior in IE driver SendKeysCommandHandler to
     call Element::GetLocationOnceScrolledIntoView() instead of calling
     the DOM scrollIntoView() function. Should result in less page
-    scrolling during test runs.
+    scrolling during main runs.
   * Checking if CSS transforms on elements, or their parents, are
     hiding them and therefore returning they arent visible.
   * Add not, refreshed, invisibilityOfElementWithText to
@@ -1440,7 +1440,7 @@ WebDriver:
   * FIXED: 3897: Allow windows to be resized from a frame.
 
 WebDriverJS:
-  * Better stack traces from test code.
+  * Better stack traces from main code.
   * Update webdriver.atoms.element.type to recognize
     webdriver.Key.SEPARATOR
 
@@ -1859,7 +1859,7 @@ WebDriver:
     higher chance of firing correctly on OS X.
   * Deprecated methods were removed from the FirefoxDriver and FirefoxProfile
     classes (saveScreenshot, enableNativeEvents, alwaysLoadNoFocusLib).
-  * The amount of time a test can remain hanging is now capped (to 3 hours).
+  * The amount of time a main can remain hanging is now capped (to 3 hours).
 
 Grid:
   * Gracefully handle registration of old nodes in a new grid hub (#2738).
@@ -1955,7 +1955,7 @@ WebDriver:
   * Preserve the state of modified keys when using native events on Linux.
   * Support for experimental page load detection in firefox. Set the
     "webdriver.load.strategy" to "fast" in the FirefoxProfile to enable less
-    conservative page loading detection at the risk of greater test
+    conservative page loading detection at the risk of greater main
     instability.
   * FIXED: 2031: Shielding backslashes when writing preferences to a file.
     There is an issue with Firefox: it drops \n and \r when it moves user
