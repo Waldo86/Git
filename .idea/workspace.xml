@@ -7,14 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce18c6d9-e90e-417e-a3d6-e850f7b8bbaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/git_test_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/git_test_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/git_test_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libka/selenium-2.53.1/CHANGELOG" beforeDir="false" afterPath="$PROJECT_DIR$/Libka/selenium-2.53.1/CHANGELOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/git_test/git/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/git_test/resources/da.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/git/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/da.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/git_test_jar/git_test.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/git_test_jar/git_test.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/git_test/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/git_test/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,43 +25,45 @@
     <session id="-934848422">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="7" />
           <entry key="iml" value="1" />
-          <entry key="java" value="17" />
+          <entry key="java" value="20" />
           <entry key="png" value="2" />
           <entry key="properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="7" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="20" />
           <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="3648" />
+          <entry key="java" value="3751" />
           <entry key="properties" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3648" />
+          <entry key="JAVA" value="3751" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="Properties" value="36" />
         </counts>
@@ -72,11 +72,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="288">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,18 +126,18 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="41" />
-    <option name="y" value="449" />
-    <option name="width" value="1185" />
-    <option name="height" value="468" />
+    <option name="x" value="368" />
+    <option name="y" value="360" />
+    <option name="width" value="1295" />
+    <option name="height" value="704" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,28 +148,17 @@
             <path>
               <item name="git_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="git_test" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="git_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="git_test" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="git_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="git_test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539868970818" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539874341064" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -178,16 +181,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.main">
-    <configuration name="Tutorial1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Objekt.Tutorial1" />
+  <component name="RunManager" selected="Application.main">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
       <module name="git_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Objekt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -249,17 +246,17 @@
     <list>
       <item itemvalue="JUnit.test.test" />
       <item itemvalue="JUnit.test" />
-      <item itemvalue="Application.Tutorial1" />
       <item itemvalue="JUnit.test.setUpBuilding" />
       <item itemvalue="JUnit.main" />
+      <item itemvalue="Application.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="JUnit.main" />
         <item itemvalue="JUnit.test.setUpBuilding" />
         <item itemvalue="JUnit.test" />
         <item itemvalue="JUnit.test.test" />
-        <item itemvalue="Application.Tutorial1" />
       </list>
     </recent_temporary>
   </component>
@@ -277,12 +274,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_test - 2018.10.18 at 13h 32m 13s.xml">
-      <configuration name="test.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test - 2018.10.18 at 13h 32m 40s.xml">
-      <configuration name="test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="test_setUpBuilding - 2018.10.18 at 13h 39m 43s.xml">
       <configuration name="test.setUpBuilding" configurationId="JUnit" />
     </history-entry>
@@ -307,11 +298,18 @@
     <history-entry file="main - 2018.10.18 at 14h 57m 00s.xml">
       <configuration name="main" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="main - 2018.10.18 at 16h 33m 36s.xml">
+      <configuration name="main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="main - 2018.10.18 at 16h 37m 37s.xml">
+      <configuration name="main" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11567164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11673774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -355,65 +353,57 @@
     <entry file="file://$PROJECT_DIR$/git_test.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/da.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/da.png" />
     <entry file="file://$PROJECT_DIR$/src/git/Sikuli.java" />
     <entry file="file://$PROJECT_DIR$/src/Objekt/Objektove.java" />
     <entry file="file://$PROJECT_DIR$/src/Objekt/Ahoj.java" />
-    <entry file="file://$PROJECT_DIR$/src/Objekt/Tutorial1.java">
+    <entry file="file://$PROJECT_DIR$/src/Objekt/Tutorial1.java" />
+    <entry file="file://$PROJECT_DIR$/src/Objekt/Cicavec.java" />
+    <entry file="file://$PROJECT_DIR$/src/Objekt/Pes.java" />
+    <entry file="file://$PROJECT_DIR$/src/git/git_test.java" />
+    <entry file="file://$PROJECT_DIR$/src/config.properties" />
+    <entry file="file://$PROJECT_DIR$/src/git/test.java" />
+    <entry file="jar://$PROJECT_DIR$/Libka/selenium-server-standalone-2.53.1.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="178">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Objekt/Cicavec.java">
+    <entry file="jar://$PROJECT_DIR$/Libka/selenium-server-standalone-2.53.1.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Objekt/Pes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/git/git_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/git/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="148">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Libka/selenium-server-standalone-2.53.1.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5239">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="e#6149#6150#0" expanded="true" />
+            <element signature="e#6185#6186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
