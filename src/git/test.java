@@ -32,6 +32,7 @@ public class test {
             driver.findElement(By.id("password")).sendKeys("Pokemon123");
             driver.findElement(By.id("_submit")).click();
             driver.get("https://ptk.pixelfederation.com/tool#project/20/env/43/tool/56/category/185/editor/1071/fieldSet/992/record/player_id/1626");
+            driver.findElement(By.xpath("//*[@id=\"ext-element-71\"]/div/span"));
     }
 
     @After
